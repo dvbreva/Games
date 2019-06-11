@@ -50,10 +50,21 @@
   <ItemGroup>
     <Compile Include="Implementations\GenericRepository.cs" />
     <Compile Include="Implementations\UnitOfWork.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\Data.dll.config" />
+    <None Include="bin\Debug\Repositories.dll.config" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\Repositories.csproj.CopyComplete" />
+    <None Include="obj\Debug\Repositories.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\Repositories.csprojAssemblyReference.cache" />
+    <None Include="obj\Release\Repositories.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -61,6 +72,23 @@
       <Project>{5E911214-08D2-49DE-AF56-9EA5F6981284}</Project>
       <Name>Data</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\Data.dll" />
+    <Content Include="bin\Debug\Data.pdb" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\Repositories.dll" />
+    <Content Include="bin\Debug\Repositories.pdb" />
+    <Content Include="obj\Debug\Repositories.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\Repositories.dll" />
+    <Content Include="obj\Debug\Repositories.pdb" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

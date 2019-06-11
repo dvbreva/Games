@@ -54,13 +54,39 @@
     <Compile Include="Implementations\BrandService.cs" />
     <Compile Include="Implementations\GameService.cs" />
     <Compile Include="Implementations\KindService.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="bin\Debug\ApplicationServices.dll.config" />
+    <None Include="bin\Debug\Data.dll.config" />
+    <None Include="bin\Debug\Repositories.dll.config" />
+    <None Include="obj\Debug\ApplicationServices.csproj.CopyComplete" />
+    <None Include="obj\Debug\ApplicationServices.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\ApplicationServices.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\build.force" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Release\ApplicationServices.csproj.CoreCompileInputs.cache" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="bin\Debug\ApplicationServices.dll" />
+    <Content Include="bin\Debug\ApplicationServices.pdb" />
+    <Content Include="bin\Debug\Data.dll" />
+    <Content Include="bin\Debug\Data.pdb" />
+    <Content Include="bin\Debug\EntityFramework.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.dll" />
+    <Content Include="bin\Debug\EntityFramework.SqlServer.xml" />
+    <Content Include="bin\Debug\EntityFramework.xml" />
+    <Content Include="bin\Debug\Repositories.dll" />
+    <Content Include="bin\Debug\Repositories.pdb" />
+    <Content Include="obj\Debug\ApplicationServices.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\ApplicationServices.dll" />
+    <Content Include="obj\Debug\ApplicationServices.pdb" />
+  </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Data\Data.csproj">
       <Project>{5E911214-08D2-49DE-AF56-9EA5F6981284}</Project>
@@ -70,6 +96,10 @@
       <Project>{4ed3ac59-8fed-4dbc-99ff-4a8677154768}</Project>
       <Name>Repositories</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
+    <Folder Include="obj\Debug\TempPE\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
