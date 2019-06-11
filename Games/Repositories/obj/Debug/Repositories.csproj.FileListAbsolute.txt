@@ -1,0 +1,15 @@
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\Repositories.dll.config
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\Repositories.dll
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\Repositories.pdb
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\Data.dll
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\EntityFramework.dll
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\EntityFramework.SqlServer.dll
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\Data.pdb
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\Data.dll.config
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\EntityFramework.xml
+D:\Users\user\Desktop\Github\Games\Games\Repositories\bin\Debug\EntityFramework.SqlServer.xml
+D:\Users\user\Desktop\Github\Games\Games\Repositories\obj\Debug\Repositories.csprojAssemblyReference.cache
+D:\Users\user\Desktop\Github\Games\Games\Repositories\obj\Debug\Repositories.csproj.CoreCompileInputs.cache
+D:\Users\user\Desktop\Github\Games\Games\Repositories\obj\Debug\Repositories.csproj.CopyComplete
+D:\Users\user\Desktop\Github\Games\Games\Repositories\obj\Debug\Repositories.dll
+D:\Users\user\Desktop\Github\Games\Games\Repositories\obj\Debug\Repositories.pdb
