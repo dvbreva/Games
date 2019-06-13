@@ -2,8 +2,6 @@ D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\Applicati
 D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\ApplicationServices.dll
 D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\ApplicationServices.pdb
 D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\Data.dll
-D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\EntityFramework.dll
-D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\EntityFramework.SqlServer.dll
 D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\Repositories.dll
 D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\Data.pdb
 D:\Users\user\Desktop\Github\Games\Games\ApplicationServices\bin\Debug\Data.dll.config

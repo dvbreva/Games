@@ -1,2 +1,0 @@
-D:\Users\user\Desktop\Github\Games\Games\GamesWebsite\obj\Debug\GamesWebsite.csprojAssemblyReference.cache
-D:\Users\user\Desktop\Github\Games\Games\GamesWebsite\obj\Debug\GamesWebsite.csproj.CoreCompileInputs.cache
