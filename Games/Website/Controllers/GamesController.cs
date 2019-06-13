@@ -93,9 +93,41 @@ namespace Website.Controllers
         }
 
         // GET: Games/Create
-        public ActionResult Create()
+        public async Task<ActionResult> Create()
         {
-            return View();
+            GameVM gameVM = new GameVM();
+
+            string accessToken = await GetAccessToken();
+
+            using (HttpClient client = new HttpClient())
+            {
+                client.BaseAddress = url;
+                client.DefaultRequestHeaders.Accept.Clear();
+                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+                client.DefaultRequestHeaders.Add("Authorization", "Bearer " + accessToken);
+
+                HttpResponseMessage response = await client.GetAsync("brands");
+                string jsonString = await response.Content.ReadAsStringAsync();
+                List<BrandVM> gameBrands = JsonConvert.DeserializeObject<List<BrandVM>>(jsonString);
+                gameVM.BrandSelectList = new SelectList(
+                    gameBrands,
+                    "Id",
+                    "Name"
+                    );
+
+                response = await client.GetAsync("kinds");
+                jsonString = await response.Content.ReadAsStringAsync();
+                List<KindVM> gameKinds = JsonConvert.DeserializeObject<List<KindVM>>(jsonString);
+                gameVM.KindSelectList = new SelectList(
+                    gameKinds,
+                    "Id",
+                    "Name"
+                    );
+
+                return View(gameVM);
+
+
+            }
         }
 
         // POST: Games/Create
@@ -137,7 +169,6 @@ namespace Website.Controllers
             }
         }
 
-
         // GET: Games/Edit/5
         public async Task<ActionResult> Edit(int id)
         {
@@ -157,12 +188,32 @@ namespace Website.Controllers
 
                 // parse the response and return the data.
                 string jsonString = await response.Content.ReadAsStringAsync();
-                var responseData = JsonConvert.DeserializeObject<GameVM>(jsonString);
-                return View(responseData);
+                var GameVM = JsonConvert.DeserializeObject<GameVM>(jsonString);
+
+
+                response = await client.GetAsync("brands");
+                jsonString = await response.Content.ReadAsStringAsync();
+                List<BrandVM> gameBrands = JsonConvert.DeserializeObject<List<BrandVM>>(jsonString);
+                GameVM.BrandSelectList = new SelectList(
+                    gameBrands,
+                    "Id",
+                    "Name"
+                    );
+
+                response = await client.GetAsync("kinds");
+                jsonString = await response.Content.ReadAsStringAsync();
+                List<KindVM> gameKinds = JsonConvert.DeserializeObject<List<KindVM>>(jsonString);
+                GameVM.KindSelectList = new SelectList(
+                    gameKinds,
+                    "Id",
+                    "Name"
+                    );
+
+                return View(GameVM);
             }
         }
 
-        // POST: Kinds/Edit/5
+        // POST: Games/Edit/5
         [HttpPost]
         public async Task<ActionResult> Edit(GameVM gameVM)
         {
@@ -185,7 +236,7 @@ namespace Website.Controllers
                     byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
 
                     // make the request
-                    HttpResponseMessage response = await client.PostAsync("kinds/save", byteContent);
+                    HttpResponseMessage response = await client.PostAsync("games/save", byteContent);
 
                     string jsonString = await response.Content.ReadAsStringAsync();
                     var responseData = JsonConvert.DeserializeObject<GameVM>(jsonString);

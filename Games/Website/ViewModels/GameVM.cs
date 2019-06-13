@@ -1,5 +1,6 @@
 ﻿using ApplicationServices.DTOs;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace Website.ViewModels
 {
@@ -22,6 +23,13 @@ namespace Website.ViewModels
         [Display(Name = "Kind")]
         public int KindId { get; set; }
         public KindVM Kind { get; set; }
+
+
+        public SelectList BrandSelectList { get; set; }
+
+        public SelectList KindSelectList { get; set; }
+
+
 
         public GameVM()
         {

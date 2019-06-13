@@ -149,6 +149,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\LoadDataUtils.cs" />
     <Compile Include="ViewModels\BrandVM.cs" />
     <Compile Include="ViewModels\GameVM.cs" />
     <Compile Include="ViewModels\KindVM.cs" />
@@ -187,7 +188,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Kinds\Index.cshtml" />
     <Content Include="Views\Kinds\Details.cshtml" />
@@ -201,9 +201,9 @@
     <Content Include="Views\Brands\Delete.cshtml" />
     <Content Include="Views\Games\Index.cshtml" />
     <Content Include="Views\Games\Details.cshtml" />
-    <Content Include="Views\Games\Create.cshtml" />
-    <Content Include="Views\Games\Edit.cshtml" />
     <Content Include="Views\Games\Delete.cshtml" />
+    <Content Include="Views\Games\Edit.cshtml" />
+    <Content Include="Views\Games\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
